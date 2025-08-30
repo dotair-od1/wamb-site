@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://whereismybatteries.com/</loc>
-        <lastmod>2024-01-30</lastmod>
+        <loc>https://dotair-od1.github.io/wamb-site/</loc>
+        <lastmod>2025-08-30</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://whereismybatteries.com/disclosure</loc>
-        <lastmod>2024-01-30</lastmod>
+        <loc>https://dotair-od1.github.io/wamb-site/disclosure</loc>
+        <lastmod>2025-08-30</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://whereismybatteries.com/privacy</loc>
-        <lastmod>2024-01-30</lastmod>
+        <loc>https://dotair-od1.github.io/wamb-site/privacy</loc>
+        <lastmod>2025-08-30</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://whereismybatteries.com/contact</loc>
-        <lastmod>2024-01-30</lastmod>
+        <loc>https://dotair-od1.github.io/wamb-site/contact</loc>
+        <lastmod>2025-08-30</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
