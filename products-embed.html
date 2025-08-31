@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Recommended Products - Where Are My Batteries</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: #f8f9fa;
+            padding: 10px;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+        
+        .category {
+            margin-bottom: 25px;
+        }
+        
+        .category-title {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 12px;
+            padding-left: 5px;
+        }
+        
+        .products-scroll {
+            display: flex;
+            gap: 12px;
+            overflow-x: auto;
+            padding-bottom: 10px;
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        .products-scroll::-webkit-scrollbar {
+            height: 6px;
+        }
+        
+        .products-scroll::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 3px;
+        }
+        
+        .products-scroll::-webkit-scrollbar-thumb {
+            background: #667eea;
+            border-radius: 3px;
+        }
+        
+        .product-card {
+            flex: 0 0 280px;
+            background: white;
+            border-radius: 12px;
+            padding: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: all 0.2s ease;
+            position: relative;
+        }
+        
+        .product-card:active {
+            transform: scale(0.98);
+        }
+        
+        .badge {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            background: #e74c3c;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 0.7em;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        
+        .badge.popular {
+            background: #27ae60;
+        }
+        
+        .product-name {
+            font-size: 1em;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            line-height: 1.3;
+        }
+        
+        .product-price {
+            font-size: 1.3em;
+            color: #27ae60;
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+        
+        .product-rating {
+            color: #f39c12;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+        
+        .product-features {
+            list-style: none;
+            margin-bottom: 12px;
+        }
+        
+        .product-features li {
+            font-size: 0.85em;
+            color: #7f8c8d;
+            padding: 3px 0;
+            padding-left: 18px;
+            position: relative;
+        }
+        
+        .product-features li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+        }
+        
+        .buy-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 0.95em;
+            transition: all 0.2s ease;
+        }
+        
+        .buy-button:active {
+            transform: scale(0.98);
+        }
+        
+        .disclaimer {
+            text-align: center;
+            font-size: 0.75em;
+            color: #7f8c8d;
+            padding: 15px 10px;
+            border-top: 1px solid #e0e0e0;
+            margin-top: 20px;
+        }
+        
+        /* iOS-specific styling */
+        @supports (-webkit-touch-callout: none) {
+            .product-card {
+                -webkit-tap-highlight-color: transparent;
+            }
+        }
+        
+        /* Compact mode for smaller screens */
+        @media (max-width: 380px) {
+            .product-card {
+                flex: 0 0 240px;
+            }
+            
+            .product-name {
+                font-size: 0.95em;
+            }
+            
+            .product-price {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- AA Batteries -->
+    <div class="category">
+        <h2 class="category-title">AA Rechargeable Batteries</h2>
+        <div class="products-scroll">
+            <div class="product-card">
+                <span class="badge">Best Value</span>
+                <h3 class="product-name">Panasonic Eneloop Pro AA (4-Pack)</h3>
+                <div class="product-price">$24.15</div>
+                <div class="product-rating">⭐ 4.7 (11,928 reviews)</div>
+                <ul class="product-features">
+                    <li>500 recharge cycles</li>
+                    <li>Pre-charged, retains 85% after 1 year</li>
+                    <li>Works down to -4°F</li>
+                </ul>
+                <a href="https://www.amazon.com/dp/B00JHKSL28/?tag=dotair-20" class="buy-button" target="_blank">View on Amazon</a>
+            </div>
+            
+            <div class="product-card">
+                <span class="badge popular">Popular</span>
+                <h3 class="product-name">Amazon Basics AA (12-Pack)</h3>
+                <div class="product-price">$13.11</div>
+                <div class="product-rating">⭐ 4.4 (125,032 reviews)</div>
+                <ul class="product-features">
+                    <li>2400mAh capacity</li>
+                    <li>400 recharge cycles</li>
+                    <li>Great for everyday devices</li>
+                </ul>
+                <a href="https://www.amazon.com/dp/B07NWT6YLD/?tag=dotair-20" class="buy-button" target="_blank">View on Amazon</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- AAA Batteries -->
+    <div class="category">
+        <h2 class="category-title">AAA Rechargeable Batteries</h2>
+        <div class="products-scroll">
+            <div class="product-card">
+                <span class="badge">Top Rated</span>
+                <h3 class="product-name">Panasonic Eneloop AAA (8-Pack)</h3>
+                <div class="product-price">$15.99</div>
+                <div class="product-rating">⭐ 4.8 (24,292 reviews)</div>
+                <ul class="product-features">
+                    <li>Pre-charged & ready to use</li>
+                    <li>70% charge after 10 years</li>
+                </ul>
+                <a href="https://www.amazon.com/dp/B00JHKSMIG/?tag=dotair-20" class="buy-button" target="_blank">View on Amazon</a>
+            </div>
+            
+            <div class="product-card">
+                <h3 class="product-name">Energizer Power Plus AAA (4-Pack)</h3>
+                <div class="product-price">$11.49</div>
+                <div class="product-rating">⭐ 4.7 (34,832 reviews)</div>
+                <ul class="product-features">
+                    <li>800mAh capacity</li>
+                    <li>5 year battery life</li>
+                    <li>Hundreds of cycles</li>
+                </ul>
+                <a href="https://www.amazon.com/dp/B000BESLQK/?tag=dotair-20" class="buy-button" target="_blank">View on Amazon</a>
+            </div>
+            
+            <div class="product-card">
+                <span class="badge popular">Popular</span>
+                <h3 class="product-name">Amazon Basics AAA (16-Pack)</h3>
+                <div class="product-price">$12.50</div>
+                <div class="product-rating">⭐ 4.6 (205,953 reviews)</div>
+                <ul class="product-features">
+                    <li>800mAh capacity</li>
+                    <li>1000 recharge cycles</li>
+                    <li>Great value pack</li>
+                </ul>
+                <a href="https://www.amazon.com/dp/B07NWWLLMQ/?tag=dotair-20" class="buy-button" target="_blank">View on Amazon</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chargers -->
+    <div class="category">
+        <h2 class="category-title">Smart Battery Chargers</h2>
+        <div class="products-scroll">
+            <div class="product-card">
+                <span class="badge">Best Deal</span>
+                <h3 class="product-name">EBL 8-Bay Charger</h3>
+                <div class="product-price">$11.99</div>
+                <div class="product-rating">⭐ 4.5 (14,789 reviews)</div>
+                <ul class="product-features">
+                    <li>Charges 8 batteries at once</li>
+                    <li>Fast charging technology</li>
+                    <li>LED indicators</li>
+                </ul>
+                <a href="https://www.amazon.com/dp/B00EB7812C/?tag=dotair-20" class="buy-button" target="_blank">View on Amazon</a>
+            </div>
+            
+            <div class="product-card">
+                <h3 class="product-name">Panasonic Eneloop 4-Bay</h3>
+                <div class="product-price">$19.00</div>
+                <div class="product-rating">⭐ 4.5 (1,204 reviews)</div>
+                <ul class="product-features">
+                    <li>AA and AAA compatible</li>
+                    <li>Individual LED indicators</li>
+                    <li>Retractable AC plug</li>
+                </ul>
+                <a href="https://www.amazon.com/dp/B00JHKSLM8/?tag=dotair-20" class="buy-button" target="_blank">View on Amazon</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Starter Bundles -->
+    <div class="category">
+        <h2 class="category-title">Starter Bundles</h2>
+        <div class="products-scroll">
+            <div class="product-card">
+                <span class="badge">Best Starter</span>
+                <h3 class="product-name">Panasonic Charger + 4 AA</h3>
+                <div class="product-price">$23.87</div>
+                <div class="product-rating">⭐ 4.8 (40,779 reviews)</div>
+                <ul class="product-features">
+                    <li>2100 charge cycles</li>
+                    <li>Complete starter kit</li>
+                    <li>Smart charging</li>
+                </ul>
+                <a href="https://www.amazon.com/dp/B00JHKSMJU/?tag=dotair-20" class="buy-button" target="_blank">View on Amazon</a>
+            </div>
+            
+            <div class="product-card">
+                <h3 class="product-name">Energizer Bundle</h3>
+                <div class="product-price">$23.99</div>
+                <div class="product-rating">⭐ 4.6 (67,107 reviews)</div>
+                <ul class="product-features">
+                    <li>Charger + 4 AA batteries</li>
+                    <li>Auto shut-off protection</li>
+                    <li>Bad battery detection</li>
+                </ul>
+                <a href="https://www.amazon.com/dp/B00IM3P8GS/?tag=dotair-20" class="buy-button" target="_blank">View on Amazon</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Organizers -->
+    <div class="category">
+        <h2 class="category-title">Battery Organizers</h2>
+        <div class="products-scroll">
+            <div class="product-card">
+                <h3 class="product-name">Storage Box with Tester</h3>
+                <div class="product-price">$19.99</div>
+                <div class="product-rating">⭐ 4.7 (1,198 reviews)</div>
+                <ul class="product-features">
+                    <li>Holds 200 batteries</li>
+                    <li>Includes battery tester</li>
+                    <li>Fireproof & waterproof</li>
+                </ul>
+                <a href="https://www.amazon.com/dp/B09TL6K4XF/?tag=dotair-20" class="buy-button" target="_blank">View on Amazon</a>
+            </div>
+            
+            <div class="product-card">
+                <h3 class="product-name">Clear Organizer + Tester</h3>
+                <div class="product-price">$23.99</div>
+                <div class="product-rating">⭐ 4.5 (2,014 reviews)</div>
+                <ul class="product-features">
+                    <li>Holds 120 batteries</li>
+                    <li>Transparent design</li>
+                    <li>Multiple battery types</li>
+                </ul>
+                <a href="https://www.amazon.com/dp/B09FT5YJ7D/?tag=dotair-20" class="buy-button" target="_blank">View on Amazon</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="disclaimer">
+        As an Amazon Associate we earn from qualifying purchases. Prices subject to change.
+    </div>
+    
+    <script>
+        // Track clicks for analytics (optional)
+        document.querySelectorAll('.buy-button').forEach(button => {
+            button.addEventListener('click', function(e) {
+                // You can post a message to the parent app if needed
+                if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.productClick) {
+                    window.webkit.messageHandlers.productClick.postMessage({
+                        product: this.parentElement.querySelector('.product-name').textContent,
+                        url: this.href
+                    });
+                }
+            });
+        });
+        
+        // Smooth horizontal scrolling
+        document.querySelectorAll('.products-scroll').forEach(container => {
+            let isDown = false;
+            let startX;
+            let scrollLeft;
+            
+            container.addEventListener('mousedown', (e) => {
+                isDown = true;
+                startX = e.pageX - container.offsetLeft;
+                scrollLeft = container.scrollLeft;
+            });
+            
+            container.addEventListener('mouseleave', () => {
+                isDown = false;
+            });
+            
+            container.addEventListener('mouseup', () => {
+                isDown = false;
+            });
+            
+            container.addEventListener('mousemove', (e) => {
+                if (!isDown) return;
+                e.preventDefault();
+                const x = e.pageX - container.offsetLeft;
+                const walk = (x - startX) * 2;
+                container.scrollLeft = scrollLeft - walk;
+            });
+        });
+    </script>
+</body>
+</html>
