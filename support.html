@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Where Are My Batteries</title>
+    <meta name="description" content="Get help and support for the Where Are My Batteries app. Contact us, view FAQs, and find troubleshooting information.">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .support-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            margin-top: 40px;
+        }
+        
+        h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 1.1em;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        h2 {
+            color: #333;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .contact-methods {
+            display: grid;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .contact-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .contact-card h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        
+        .contact-card p {
+            color: #666;
+            margin-bottom: 10px;
+        }
+        
+        .contact-card a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            padding: 8px 16px;
+            background: white;
+            border-radius: 8px;
+            margin-top: 5px;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-card a:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .faq-item {
+            background: #f8f9fa;
+            margin-bottom: 15px;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            padding: 20px;
+            font-weight: 600;
+            color: #333;
+            cursor: pointer;
+            position: relative;
+            padding-right: 40px;
+        }
+        
+        .faq-question:after {
+            content: '+';
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.5em;
+            color: #667eea;
+        }
+        
+        .faq-answer {
+            padding: 0 20px 20px 20px;
+            color: #666;
+            display: none;
+        }
+        
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+        
+        .faq-item.active .faq-question:after {
+            content: '−';
+        }
+        
+        .troubleshooting-list {
+            list-style: none;
+        }
+        
+        .troubleshooting-list li {
+            background: #f8f9fa;
+            padding: 15px 20px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            position: relative;
+            padding-left: 50px;
+        }
+        
+        .troubleshooting-list li:before {
+            content: '✓';
+            position: absolute;
+            left: 20px;
+            color: #27ae60;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        
+        .response-time {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .response-time strong {
+            color: #856404;
+        }
+        
+        .app-info {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .app-info h3 {
+            margin-bottom: 10px;
+        }
+        
+        .app-info p {
+            opacity: 0.9;
+        }
+        
+        .back-home {
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .back-home a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 10px 20px;
+            border: 2px solid #667eea;
+            border-radius: 8px;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+        
+        .back-home a:hover {
+            background: #667eea;
+            color: white;
+        }
+        
+        @media (max-width: 600px) {
+            .support-card {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="support-card">
+            <h1>Support Center</h1>
+            <p class="subtitle">We're here to help you get the most out of Where Are My Batteries</p>
+            
+            <!-- Contact Section -->
+            <div class="section">
+                <h2>Contact Us</h2>
+                <div class="contact-methods">
+                    <div class="contact-card">
+                        <h3>📧 Email Support</h3>
+                        <p>For technical issues, feature requests, or general questions</p>
+                        <a href="mailto:dotair.od1@gmail.com">dotair.od1@gmail.com</a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <h3>🐛 Report a Bug</h3>
+                        <p>Found something not working right? Let us know!</p>
+                        <a href="mailto:dotair.od1@gmail.com?subject=Bug%20Report">Report Bug</a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <h3>💡 Feature Request</h3>
+                        <p>Have an idea to improve the app? We'd love to hear it!</p>
+                        <a href="mailto:dotair.od1@gmail.com?subject=Feature%20Request">Suggest Feature</a>
+                    </div>
+                </div>
+                
+                <div class="response-time">
+                    <strong>Response Time:</strong> We typically respond within 24-48 hours during business days
+                </div>
+            </div>
+            
+            <!-- FAQ Section -->
+            <div class="section">
+                <h2>Frequently Asked Questions</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How do I add a new battery to track?</div>
+                    <div class="faq-answer">
+                        Tap the "+" button in the app, select your battery type (AA, AAA, etc.), and enter the details like brand, purchase date, and current location. You can also add a photo to help identify it later.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Can I track rechargeable batteries?</div>
+                    <div class="faq-answer">
+                        Yes! The app is perfect for tracking rechargeable batteries. You can log charge cycles, set reminders for recharging, and track the battery's performance over time.
+                    </div>
+                </div>
+                                
+                <div class="faq-item">
+                    <div class="faq-question">Is my data backed up?</div>
+                    <div class="faq-answer">
+                        If you have iCloud enabled, your battery data is automatically backed up and restored when you are setting up a new phone by transferring, or when you restore the app after a system offload.
+                    </div>
+                </div>
+                
+            </div>
+            
+            <!-- Troubleshooting Section -->
+            
+            <!-- App Information -->
+            <div class="app-info">
+                <h3>Where Are My Batteries</h3>
+                <p>Version 1.0 • iOS 14.0+ Required</p>
+                <p>© 2025 Dot Air. All rights reserved.</p>
+            </div>
+            
+            <!-- Privacy Policy Link -->
+            <div class="section">
+                <h2>Legal & Privacy</h2>
+                <p>Your privacy is important to us. Read our <a href="/privacy-policy.html" style="color: #667eea;">Privacy Policy</a> to learn how we handle your data.</p>
+                <p>For terms of use, please see our <a href="/terms.html" style="color: #667eea;">Terms of Service</a>.</p>
+            </div>
+            
+            <div class="back-home">
+                <a href="/">← Back to Home</a>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // FAQ Toggle Functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                faqItem.classList.toggle('active');
+                
+                // Close other FAQ items
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    if (item !== faqItem) {
+                        item.classList.remove('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
